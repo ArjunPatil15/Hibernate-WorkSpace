@@ -1,0 +1,5 @@
+package com.ninfinity.mapping.onetoone;
+
+public class Answer {
+
+}

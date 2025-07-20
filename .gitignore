@@ -1,0 +1,49 @@
+# Java class files
+*.class
+
+# Logs
+*.log
+
+# Hibernate-specific files
+hibernate.cfg.xml~
+
+# Build directories
+/build/
+/bin/
+/out/
+/target/
+
+# Eclipse IDE
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Database files (optional)
+*.mv.db
+*.h2.db
+*.sqlite
+
+# JAR/WAR files
+*.jar
+*.war
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+# Eclipse workspace files (should not be committed)
+.metadata/
+
+# Line ending normalization
+* text=auto

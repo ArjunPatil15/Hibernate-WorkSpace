@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+<hibernate-configuration>
+
+<session-factory>
+
+<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/hiberdata</property>
+<property name="connection.username">root</property>
+<property name="connection.password">qwerty123</property>
+
+<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+<property name="hbm2ddl.auto">update</property>
+
+<property name="show_sql">true</property>
+
+<property name="format_sql">true</property>
+
+<property name="cache.use_secound_level_cache">true</property>
+<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+
+
+<!-- <mapping class="com.ninfinity.ProjectOne.Student"/>  -->
+
+<!-- <mapping resource="com/ninfinity/xmlxml/Teacher.hbm.xml"/> -->
+
+<!-- <mapping class="com.ninfinity.ProjectOne.Manager"/> -->
+
+<!-- <mapping class="com.ninfinity.embed.Student"/> -->
+<!-- <mapping class="com.ninfinity.mapping.onetoone.Question"></mapping>
+
+<mapping class="com.ninfinity.mapping.onetoone.Answer"></mapping> -->
+
+
+<!-- <mapping class="com.ninfinity.mapping.onetomany.Question"></mapping>
+
+<mapping class="com.ninfinity.mapping.onetomany.Answer"></mapping> -->
+
+
+<!-- <mapping class="com.ninfinity.mapping.onetomany.Person"></mapping>
+
+<mapping class="com.ninfinity.mapping.onetomany.Address"></mapping> -->
+
+
+<!-- <mapping class="com.ninfinity.mapping.manytomany.Project"/>
+
+<mapping class="com.ninfinity.mapping.manytomany.Employee"/> -->
+
+
+ <mapping class="com.ninfinity.inheritance.one.Employee"/>
+
+<mapping class="com.ninfinity.inheritance.one.Student"/> 
+
+
+<!-- <mapping class = "com.ninfinity.inheritance.two.Person"/>
+<mapping class = "com.ninfinity.inheritance.two.Student"/>
+<mapping class = "com.ninfinity.inheritance.two.Employee"/>
+  -->
+
+<!-- <mapping class = "com.ninfinity.inheritance.three.Person"/>
+<mapping class = "com.ninfinity.inheritance.three.Student"/>
+<mapping class = "com.ninfinity.inheritance.three.Employee"/> -->
+
+<!-- <mapping class = "com.ninfinity.inheritance.four.Person"/>
+<mapping class = "com.ninfinity.inheritance.four.Student"/>
+<mapping class = "com.ninfinity.inheritance.four.Employee"/> -->
+
+<!-- <mapping class = "com.ninfinity.states.Student"/> -->
+
+<!-- <mapping class = "com.ninfinity.HQLSQL.Teacher"/>-->
+
+<!-- <mapping class = "com.ninfinity.testCache.Developer"/> -->
+
+<!-- <mapping class = "com.ninfinity.criteria.Student"/> -->
+
+</session-factory>
+
+
+</hibernate-configuration>
